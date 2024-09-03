@@ -42,13 +42,13 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .btn {
-  @apply px-4 py-2 text-base font-semibold rounded-md transition;
-
-  &-outline {
-    @apply bg-blue text-white shadow-md hover:bg-blue;
-  }
+  @apply px-[15px] rounded-lg py-[10px] text-base font-semibold transition-colors;
 
   &-raised {
+    @apply bg-blue text-white shadow-md hover:bg-navy;
+  }
+
+  &-outline {
     @apply bg-transparent border-2 border-blue text-blue hover:bg-blue hover:text-white;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="w-full bg-black flex justify-between px-[120px] py-6 border-t border-white absolute bottom-0"
+    class="w-full bg-black flex justify-between px-[120px] py-6 border-t border-white absolute bottom-0 max-md:px-4"
   >
     <p class="text-white">Cars Spot</p>
     <button class="text-white underline text-paragraph-md">
