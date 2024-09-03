@@ -45,11 +45,11 @@ export default defineComponent({
   @apply px-4 py-2 text-base font-semibold rounded-md transition;
 
   &-outline {
-    @apply bg-blue-500    text-white    shadow-md    hover:bg-blue-600;
+    @apply bg-blue text-white shadow-md hover:bg-blue;
   }
 
   &-raised {
-    @apply bg-transparent border-2    border-blue-500    text-blue-500    hover:bg-blue-500    hover:text-white;
+    @apply bg-transparent border-2 border-blue text-blue hover:bg-blue hover:text-white;
   }
 }
 </style>
