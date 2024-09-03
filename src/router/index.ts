@@ -3,15 +3,11 @@ import HomeView from "../views/HomeView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    name: "home",
+    path: "/home",
     component: HomeView,
   },
-  {
-    path: "/about",
-    name: "about",
-    component: () => import("../views/AboutView.vue"),
-  },
+  { path: "/", redirect: "/home" },
+  { path: "/:pathMatch(.*)*", redirect: "/home" },
 ];
 
 const router = createRouter({
