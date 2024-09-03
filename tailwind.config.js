@@ -6,8 +6,10 @@ module.exports = {
     colors: {
       blue: "#0147FF",
       navy: "#0028FF",
-      white: "#F7F7F7",
+      white: "#FFFFFF",
+      "background-white": "#F7F7F7",
       black: "#282828",
+      dark: "#1D1D1B",
       transparent: "#ffffff00",
     },
     extend: {
@@ -19,7 +21,7 @@ module.exports = {
         "header-xs": ["12px", { fontWeight: "500" }],
 
         "paragraph-lg": ["20px", { fontWeight: "400" }],
-        "paragraph-md": ["16px", { fontWeight: "400" }],
+        "paragraph-md": ["16px", { fontWeight: "400", lineHeight: "24px" }],
         "paragraph-sm": ["14px", { fontWeight: "400" }],
         "paragraph-xs": ["12px", { fontWeight: "400" }],
       },

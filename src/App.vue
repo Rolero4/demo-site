@@ -23,7 +23,7 @@ body {
 }
 
 body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Bebas Neue;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

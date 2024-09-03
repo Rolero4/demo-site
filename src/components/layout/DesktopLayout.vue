@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <div class="flex flex-col relative min-h-screen mx-auto bg-background-white">
     <AppHeader></AppHeader>
-    <slot></slot>
+    <main class="h-full">
+      <slot></slot>
+    </main>
     <AppFooter></AppFooter>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import AppFooter from "../core/Footer.vue";
 import AppHeader from "../core/Header.vue";
-import AppFooter from "../core/MobileMenu.vue";
 
 export default defineComponent({
   name: "AppDesktopLayout",

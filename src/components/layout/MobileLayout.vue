@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col relative min-h-screen mx-auto bg-background-white">
     <AppMobileHeader></AppMobileHeader>
     <slot></slot>
     <AppFooter></AppFooter>
