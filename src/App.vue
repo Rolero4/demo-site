@@ -1,10 +1,20 @@
 <template>
-  <nav>
-    <router-link to="#section1">Home</router-link> |
-    <router-link to="#section2">About</router-link>
-  </nav>
-  <router-view class="scroll-behavior: smooth;" />
+  <AppLayout>
+    <router-view />
+  </AppLayout>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import AppLayout from "./components/layout/Layout.vue";
+
+export default defineComponent({
+  name: "App",
+  components: {
+    AppLayout,
+  },
+});
+</script>
 
 <style lang="scss">
 html,

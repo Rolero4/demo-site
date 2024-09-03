@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
+import AppButton from "@/components/global/Button.vue";
 import { defineComponent } from "vue";
-import AppButton from "@/components/global/Button.vue"; // @ is an alias to /src
 
 export default defineComponent({
   name: "HomeView",
