@@ -1,6 +1,6 @@
 <template>
-  <div
-    class="sticky top-0 right-0 left-0 w-full flex items-center justify-between py-4 px-[120px] max-md:px-4 z-10 bg-background-white"
+  <header
+    class="w-full flex items-center justify-between py-4 px-[120px] max-md:px-4 z-10 bg-background-white max-md:border-r max-md:border-l max-md:border-black"
   >
     <a href="/" class="flex items-center">
       <v-icon
@@ -19,7 +19,7 @@
     </div>
 
     <AppButton text="Zadzwoń do nas" variant="raised"></AppButton>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">

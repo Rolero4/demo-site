@@ -24,7 +24,7 @@ export default defineComponent({
     const isMobile = ref(false);
 
     const checkScreenSize = (): void => {
-      isMobile.value = window.innerWidth <= 768;
+      isMobile.value = window.innerWidth < 768;
     };
 
     onMounted(() => {

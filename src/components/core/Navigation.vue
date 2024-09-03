@@ -7,7 +7,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "AppHeaderNavigation",
+  name: "AppNavigation",
 });
 </script>
 

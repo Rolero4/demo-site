@@ -2,10 +2,14 @@
   <div
     class="flex flex-col relative min-h-screen mx-auto bg-background-white w-full"
   >
-    <AppHeader></AppHeader>
+    <div class="sticky top-0 right-0 left-0 flex flex-col">
+      <AppHeader></AppHeader>
+      <AppMobileMenu>
+        <AppNavigation></AppNavigation>
+      </AppMobileMenu>
+    </div>
     <slot></slot>
     <AppFooter></AppFooter>
-    <AppMobileMenu></AppMobileMenu>
   </div>
 </template>
 
@@ -14,6 +18,7 @@ import { defineComponent } from "vue";
 import AppFooter from "../core/Footer.vue";
 import AppHeader from "../core/Header.vue";
 import AppMobileMenu from "../core/MobileMenu.vue";
+import AppNavigation from "../core/Navigation.vue";
 
 export default defineComponent({
   name: "AppMobileLayout",
@@ -21,6 +26,7 @@ export default defineComponent({
     AppHeader,
     AppFooter,
     AppMobileMenu,
+    AppNavigation,
   },
 });
 </script>
