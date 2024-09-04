@@ -4,11 +4,13 @@
       :src="require(`@/assets/svg/${icon_left}`)"
       :alt="icon_left"
       class="absolute top-0 right-[210px] z-20"
+      loading="lazy"
     />
     <img
       :src="require(`@/assets/svg/${icon_right}`)"
       :alt="icon_right"
       class="absolute top-[-10px] right-0 z-20"
+      loading="lazy"
     />
   </div>
 </template>

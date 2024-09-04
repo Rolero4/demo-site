@@ -1,10 +1,10 @@
 <template>
   <div
-    class="z-10 w-full relative max-md:py-[20px] py-[80px] mb-8 max-w-[1440px] px-[80px] mx-auto max-md:px-4 h-[825px]"
+    class="z-10 w-full relative max-md:py-[20px] py-[80px] mb-8 max-w-[1440px] px-[80px] mx-auto max-md:px-0 h-[825px] max-md:h-[calc(100vh-100px)]"
   >
-    <div class="flex flex-col text-black">
+    <div class="flex flex-col text-black max-md:px-4">
       <h2
-        class="font-bebas text-[76.62px] -tracking-[0.04rem] leading-[83.92px]"
+        class="font-bebas text-[76.62px] -tracking-[0.04rem] leading-[83.92px] max-md:text-[48px] max-md:leading-[56px] mt-4"
       >
         SPRZEDAJEMY SAMOCHODY
         <br />
@@ -30,7 +30,8 @@
     <img
       src="@/assets/images/landing.png"
       alt="landing"
-      class="absolute bottom-[110px] right-[80px] w-[1064px] h-[404px]"
+      loading="lazy"
+      class="absolute bottom-[110px] right-[80px] w-[1064px] h-[404px] max-md:w-screen max-md:h-auto max-md:right-0 max-md:bottom-[40px] object-cover max-md:mt-8"
     />
   </div>
 </template>
@@ -38,7 +39,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import AppButton from "../global/Button.vue";
-import { scrollTo } from "@/helpers/scrollTo";
 
 export default defineComponent({
   name: "AppLandingSection",
@@ -46,8 +46,11 @@ export default defineComponent({
     AppButton,
   },
   methods: {
-    scrollTo(id: string) {
-      scrollTo(id);
+    scrollTo(id: string): void {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     },
   },
 });

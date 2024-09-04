@@ -2,7 +2,7 @@
   <header
     class="relative w-full flex items-center justify-between py-4 px-[80px] max-md:px-4 z-10 bg-background-white max-md:border-r max-md:border-l max-md:border-black"
   >
-    <a href="/" class="flex items-center">
+    <a href="/home#" class="flex items-center z-20">
       <v-icon
         name="hi-lightning-bolt"
         scale="1.5"
