@@ -1,25 +1,27 @@
 <template>
-  <h2
-    class="text-white text-justify text-header-lg leading-[37.5px] font-bebas w-full"
-  >
-    {{ header }}
-  </h2>
-  <p class="text-white text-justify font-condensed">
-    <span v-if="isExpanded">
-      {{ text }}
-    </span>
-    <span v-else>
-      <span>{{ trucateText(text) }}</span>
-      <span>[...]</span>
-    </span>
-  </p>
-  <button
-    @click="toggle"
-    class="underline flex gap-1 text-white font-condensed"
-  >
-    <span>{{ isExpanded ? "Zwiń" : "Rozwiń" }}</span>
-    <v-icon :name="isExpanded ? 'bi-chevron-up' : 'bi-chevron-down'" />
-  </button>
+  <div class="flex flex-col gap-y-4">
+    <h2 class="text-white text-header-lg font-bebas w-full -tracking-[0.03rem]">
+      {{ header }}
+    </h2>
+    <p
+      class="text-white text-justify font-condensed text-paragraph-sm leading-[21px]"
+    >
+      <span v-if="isExpanded">
+        {{ text }}
+      </span>
+      <span v-else> {{ trucateText(text) }} [...] </span>
+    </p>
+    <button
+      @click="toggle"
+      class="flex flex-col gap-2 text-white font-condensed w-[80px]"
+    >
+      <div class="flex gap-3 items-center">
+        <span>{{ isExpanded ? "Zwiń" : "Rozwiń" }}</span>
+        <v-icon :name="isExpanded ? 'hi-arrow-up' : 'hi-arrow-down'" />
+      </div>
+      <hr />
+    </button>
+  </div>
 </template>
 
 <script lang="ts">

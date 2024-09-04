@@ -4,9 +4,36 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
-      flex: "Roboto Flex",
-      condensed: "Roboto Condensed",
-      bebas: "Bebas Neue",
+      flex: [
+        "Roboto Flex",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif",
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        "Segoe UI Symbol",
+        '"Noto Color Emoji"',
+      ],
+      condensed: [
+        "Roboto Condensed",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif",
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        "Segoe UI Symbol",
+        '"Noto Color Emoji"',
+      ],
+      bebas: [
+        "Bebas Neue",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif",
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        "Segoe UI Symbol",
+        '"Noto Color Emoji"',
+      ],
     },
     colors: {
       blue: "#0147FF",
@@ -20,7 +47,7 @@ module.exports = {
     extend: {
       fontSize: {
         "header-xl": ["32px", { fontWeight: "500" }],
-        "header-lg": ["25px", { fontWeight: "500", lineHeight: "37.5px" }],
+        "header-lg": ["25px", { fontWeight: "400", lineHeight: "37.5px" }],
         "header-md": ["16px", { fontWeight: "500" }],
         "header-sm": ["14px", { fontWeight: "500" }],
         "header-xs": ["12px", { fontWeight: "500" }],
