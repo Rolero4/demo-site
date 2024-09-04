@@ -1,11 +1,11 @@
 <template>
   <a
-    href="/home#gallery"
+    href="#gallery"
     class="text-black text-paragraph-md font-flex hover:scale-[1.05] z-30 cursor-pointer"
     >Galeria zdjęć</a
   >
   <a
-    href="/home#faq"
+    href="#faq"
     class="text-black text-paragraph-md font-flex hover:scale-[1.05] z-30 cursor-pointer"
     >FaQ</a
   >
