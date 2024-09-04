@@ -1,12 +1,12 @@
 <template>
   <div class="flex bg-black w-full justify-center py-[88px] max-md:py-6">
     <div
-      class="max-w-[1440px] w-full flex gap-x-[52px] gap-y-10 flex-wrap justify-center px-[120px] max-md:px-4"
+      class="max-w-[1440px] w-full flex gap-x-12 gap-y-10 justify-center px-[80px] max-md:px-4 flex-wrap"
     >
       <div
         v-for="item in faqItems"
         :key="item.id"
-        class="w-[574px] max-md:w-full"
+        class="w-[calc(50%-24px)] max-md:w-full"
       >
         <AppFaqElement :header="item.header" :text="item.text" />
       </div>

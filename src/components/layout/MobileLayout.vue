@@ -2,7 +2,7 @@
   <div
     class="flex flex-col relative min-h-screen mx-auto bg-background-white w-full"
   >
-    <div class="sticky top-0 right-0 left-0 flex flex-col z-10">
+    <div class="sticky top-0 right-0 left-0 flex flex-col z-30">
       <AppHeader></AppHeader>
       <AppMobileMenu>
         <AppNavigation></AppNavigation>

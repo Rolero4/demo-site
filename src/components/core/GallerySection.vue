@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col w-full py-[88px] max-md:py-6 mb-8 max-w-[1264px] mx-auto max-md:px-4"
+    class="flex flex-col w-full py-[88px] max-md:py-6 mb-8 max-w-[1440px] px-[80px] mx-auto max-md:px-4"
   >
     <h4
       class="font-condensed font-[400] text-[21.5px] leading-[32.5px] text-blue"

@@ -24,6 +24,7 @@ export default defineComponent({
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {

@@ -1,8 +1,8 @@
 <template>
   <header
-    class="w-full flex items-center justify-between py-4 px-[120px] max-md:px-4 z-10 bg-background-white max-md:border-r max-md:border-l max-md:border-black"
+    class="relative w-full flex items-center justify-between py-4 px-[80px] max-md:px-4 z-1 bg-background-white max-md:border-r max-md:border-l max-md:border-black fade-in"
   >
-    <a href="/" class="flex items-center">
+    <a href="/home#" class="flex items-center z-20">
       <v-icon
         name="hi-lightning-bolt"
         scale="1.5"
@@ -18,7 +18,9 @@
       <slot></slot>
     </div>
 
-    <AppButton text="Zadzwoń do nas" variant="raised"></AppButton>
+    <div class="relative z-20">
+      <AppButton text="Zadzwoń do nas" variant="raised"></AppButton>
+    </div>
   </header>
 </template>
 
