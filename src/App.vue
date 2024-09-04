@@ -7,11 +7,15 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import AppLayout from "./components/layout/Layout.vue";
+import { provideScreenSize } from "./store/isMobileStore";
 
 export default defineComponent({
   name: "App",
   components: {
     AppLayout,
+  },
+  setup() {
+    provideScreenSize();
   },
 });
 </script>
