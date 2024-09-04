@@ -10,7 +10,8 @@
 <script lang="ts">
 import AppDesktopLayout from "@/components/layout/DesktopLayout.vue";
 import AppMobileLayout from "@/components/layout/MobileLayout.vue";
-import { defineComponent, onMounted, onUnmounted, ref } from "vue";
+import { defineComponent } from "vue";
+import { useProvidedScreenSize } from "../../store/isMobileStore";
 
 export default defineComponent({
   name: "AppLayout",
@@ -19,21 +20,7 @@ export default defineComponent({
     AppDesktopLayout,
   },
   setup() {
-    const isMobile = ref(false);
-
-    const checkScreenSize = (): void => {
-      isMobile.value = window.innerWidth < 768;
-    };
-
-    onMounted(() => {
-      checkScreenSize();
-      window.addEventListener("resize", checkScreenSize);
-    });
-
-    onUnmounted(() => {
-      window.removeEventListener("resize", checkScreenSize);
-    });
-
+    const { isMobile } = useProvidedScreenSize();
     return { isMobile };
   },
 });

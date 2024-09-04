@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col w-full py-[88px] max-md:py-6 mb-8 max-w-[1264px] mx-auto"
+    class="flex flex-col w-full py-[88px] max-md:py-6 mb-8 max-w-[1264px] mx-auto max-md:px-4"
   >
     <h4
       class="font-condensed font-[400] text-[21.5px] leading-[32.5px] text-blue"
@@ -10,7 +10,7 @@
     <h3 class="font-bebas font-[400] text-[40px] leading-[48px] text-dark">
       ZOBACZ NASZĄ GALERIĘ ZDJĘĆ
     </h3>
-    <div class="flex w-full gap-4 mt-7 mb-[88px]">
+    <div class="flex w-full gap-4 mt-7 mb-[88px] max-md:mb-10">
       <button
         class="btn"
         :class="vehicleState === 'car' ? 'btn-active' : ''"

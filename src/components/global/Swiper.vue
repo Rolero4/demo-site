@@ -1,7 +1,7 @@
 <template>
   <div class="w-full max-w-[1264px] flex justify-center z-5">
     <swiper
-      :slides-per-view="2"
+      :slides-per-view="isMobile ? 1 : 2"
       :space-between="64"
       :modules="modules"
       :pagination="true"
@@ -16,7 +16,7 @@
           <img
             :src="require(`@/assets/images/${image}`)"
             :alt="image"
-            class="w-full object-cover h-[400px]"
+            class="w-full object-cover h-[400px] max-md:h-auto"
           />
         </div>
       </swiper-slide>
@@ -30,6 +30,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { defineComponent, PropType } from "vue";
+import { useProvidedScreenSize } from "../../store/isMobileStore";
 
 export default defineComponent({
   name: "AppSwiper",
@@ -43,8 +44,12 @@ export default defineComponent({
       required: true,
     },
   },
+
   setup() {
+    const { isMobile } = useProvidedScreenSize();
+
     return {
+      isMobile,
       modules: [Pagination],
     };
   },
