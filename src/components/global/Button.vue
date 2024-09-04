@@ -42,7 +42,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .btn {
-  @apply px-[15px] rounded-lg py-[10px] text-base font-semibold transition-colors;
+  @apply px-[15px] rounded-lg py-[10px] text-base font-semibold transition-colors font-flex;
 
   &-raised {
     @apply bg-blue text-white shadow-md hover:bg-navy;

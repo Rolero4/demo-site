@@ -1,11 +1,15 @@
 <template>
-  <footer
-    class="w-full bg-black flex justify-between px-[120px] py-6 border-t border-white absolute bottom-0 max-md:px-4"
-  >
-    <p class="text-white">Cars Spot</p>
-    <button class="text-white underline text-paragraph-md">
-      Polityka prywatności
-    </button>
+  <footer class="w-full bg-black flex justify-center border-t border-white">
+    <div
+      class="w-[1440px] bg-black flex justify-between px-[120px] py-6 max-md:px-4"
+    >
+      <p class="text-white text-paragraph-md font-bold font-condensed">
+        Cars Spot
+      </p>
+      <button class="text-white underline text-paragraph-md font-condensed">
+        Polityka prywatności
+      </button>
+    </div>
   </footer>
 </template>
 

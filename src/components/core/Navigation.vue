@@ -1,6 +1,8 @@
 <template>
-  <a href="#gallery" class="text-black text-paragraph-md">Galeria zdjęć</a>
-  <a href="#faq" class="text-black text-paragraph-md">FaQ</a>
+  <a href="#gallery" class="text-black text-paragraph-md font-flex"
+    >Galeria zdjęć</a
+  >
+  <a href="#faq" class="text-black text-paragraph-md font-flex">FaQ</a>
 </template>
 
 <script lang="ts">

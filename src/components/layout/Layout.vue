@@ -1,14 +1,13 @@
 <template>
   <AppMobileLayout v-if="isMobile">
-    <AppContent></AppContent>
+    <slot></slot>
   </AppMobileLayout>
   <AppDesktopLayout v-else>
-    <AppContent></AppContent>
+    <slot></slot>
   </AppDesktopLayout>
 </template>
 
 <script lang="ts">
-import AppContent from "@/components/layout/Content.vue";
 import AppDesktopLayout from "@/components/layout/DesktopLayout.vue";
 import AppMobileLayout from "@/components/layout/MobileLayout.vue";
 import { defineComponent, onMounted, onUnmounted, ref } from "vue";
@@ -18,7 +17,6 @@ export default defineComponent({
   components: {
     AppMobileLayout,
     AppDesktopLayout,
-    AppContent,
   },
   setup() {
     const isMobile = ref(false);
