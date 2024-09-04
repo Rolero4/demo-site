@@ -10,13 +10,12 @@
       <slot></slot>
     </div>
 
-    <v-icon :name="isOpen ? 'bi-chevron-up' : 'bi-chevron-down'" />
+    <v-icon :name="isExpanded ? 'bi-chevron-up' : 'bi-chevron-down'" />
   </div>
 </template>
 
 <script lang="ts">
-import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { BiChevronDown, BiChevronUp } from "oh-vue-icons/icons";
+import { OhVueIcon } from "oh-vue-icons";
 import { computed, defineComponent, ref } from "vue";
 
 export default defineComponent({
@@ -25,21 +24,18 @@ export default defineComponent({
     "v-icon": OhVueIcon,
   },
   setup() {
-    const isOpen = ref(false);
+    const isExpanded = ref(false);
 
     const toggle = (): void => {
-      isOpen.value = !isOpen.value;
+      isExpanded.value = !isExpanded.value;
     };
 
     const containerClass = computed(() => {
-      return isOpen.value ? "" : "hidden";
+      return isExpanded.value ? "" : "hidden";
     });
 
-    // Register icons globally
-    addIcons(BiChevronDown, BiChevronUp);
-
     return {
-      isOpen,
+      isExpanded,
       toggle,
       containerClass,
     };

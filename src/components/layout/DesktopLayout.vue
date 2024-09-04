@@ -8,11 +8,11 @@
           <AppNavigation></AppNavigation>
         </AppHeader>
       </div>
-
-      <main class="h-full">
-        <slot></slot>
-      </main>
     </div>
+
+    <main class="h-full w-full">
+      <slot></slot>
+    </main>
     <AppFooter></AppFooter>
   </div>
 </template>

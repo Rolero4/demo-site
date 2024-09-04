@@ -1,16 +1,17 @@
 <template>
-  <div class="home">
-    <div>home page</div>
-    <AppButton variant="outline" text="test"> </AppButton>
-  </div>
+  <section id="#landing"></section>
+  <section id="#gallery"></section>
+  <section id="#faq">
+    <FaqSection></FaqSection>
+  </section>
 </template>
 
 <script lang="ts">
-import AppButton from "@/components/global/Button.vue";
 import { defineComponent } from "vue";
+import FaqSection from "../components/core/FaqSection.vue";
 
 export default defineComponent({
   name: "HomeView",
-  components: { AppButton },
+  components: { FaqSection },
 });
 </script>

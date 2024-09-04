@@ -3,6 +3,11 @@ module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false,
   theme: {
+    fontFamily: {
+      flex: "Roboto Flex",
+      condensed: "Roboto Condensed",
+      bebas: "Bebas Neue",
+    },
     colors: {
       blue: "#0147FF",
       navy: "#0028FF",
@@ -15,13 +20,19 @@ module.exports = {
     extend: {
       fontSize: {
         "header-xl": ["32px", { fontWeight: "500" }],
-        "header-lg": ["24px", { fontWeight: "500" }],
+        "header-lg": ["25px", { fontWeight: "500", lineHeight: "37.5px" }],
         "header-md": ["16px", { fontWeight: "500" }],
         "header-sm": ["14px", { fontWeight: "500" }],
         "header-xs": ["12px", { fontWeight: "500" }],
 
         "paragraph-lg": ["20px", { fontWeight: "400" }],
-        "paragraph-md": ["16px", { fontWeight: "400", lineHeight: "24px" }],
+        "paragraph-md": [
+          "16px",
+          {
+            fontWeight: "400",
+            lineHeight: "24px",
+          },
+        ],
         "paragraph-sm": ["14px", { fontWeight: "400" }],
         "paragraph-xs": ["12px", { fontWeight: "400" }],
       },
