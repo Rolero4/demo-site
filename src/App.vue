@@ -1,19 +1,36 @@
 <template>
   <AppLayout>
-    <router-view />
+    <div class="flex flex-col justify-center">
+      <section id="landing" class="fade-in">
+        <AppLandingSection></AppLandingSection>
+      </section>
+      <section id="gallery" class="fade-in">
+        <AppGallerySection></AppGallerySection>
+      </section>
+      <section id="faq" class="fade-in">
+        <AppFaqSection></AppFaqSection>
+      </section>
+    </div>
   </AppLayout>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import AppLayout from "./components/layout/Layout.vue";
+import AppFaqSection from "./components/core/FaqSection.vue";
+import AppGallerySection from "./components/core/GallerySection.vue";
+import AppLandingSection from "./components/core/LandingSection.vue";
 import { provideScreenSize } from "./store/isMobileStore";
 
 export default defineComponent({
   name: "App",
   components: {
     AppLayout,
+    AppFaqSection,
+    AppGallerySection,
+    AppLandingSection,
   },
+
   setup() {
     provideScreenSize();
   },
