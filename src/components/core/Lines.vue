@@ -34,6 +34,6 @@ export default defineComponent({
 
 <style scoped>
 .svg-block {
-  @apply flex z-10 absolute top-0 right-[180px] w-[471px] h-[668px];
+  @apply flex z-10 absolute top-[-40px] right-[80px] w-[471px] h-[668px];
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="relative w-full flex items-center justify-between py-4 px-[80px] max-md:px-4 z-10 bg-background-white max-md:border-r max-md:border-l max-md:border-black"
+    class="relative w-full flex items-center justify-between py-4 px-[80px] max-md:px-4 z-1 bg-background-white max-md:border-r max-md:border-l max-md:border-black fade-in"
   >
     <a href="/home#" class="flex items-center z-20">
       <v-icon

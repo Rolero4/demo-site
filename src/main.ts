@@ -9,6 +9,7 @@ import {
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
+import "./styles/animation.scss";
 import "./styles/swiper.scss";
 import "./styles/tailwind.scss";
 

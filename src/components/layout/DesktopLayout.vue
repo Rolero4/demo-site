@@ -3,7 +3,7 @@
     class="flex flex-col relative min-h-screen mx-auto bg-background-white items-center"
   >
     <div class="w-full max-w-[1440px]">
-      <div class="sticky top-0 right-0 left-0 z-10">
+      <div class="sticky top-0 right-0 left-0 z-1">
         <AppHeader>
           <AppLines />
           <AppNavigation></AppNavigation>

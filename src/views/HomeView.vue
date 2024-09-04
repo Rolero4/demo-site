@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col justify-center">
-    <section id="landing">
+    <section id="landing" class="fade-in">
       <AppLandingSection></AppLandingSection>
     </section>
-    <section id="gallery">
+    <section id="gallery" class="fade-in">
       <AppGallerySection></AppGallerySection>
     </section>
-    <section id="faq">
+    <section id="faq" class="fade-in">
       <AppFaqSection></AppFaqSection>
     </section>
   </div>

@@ -4,7 +4,7 @@
   >
     <div class="flex flex-col text-black max-md:px-4">
       <h2
-        class="font-bebas text-[76.62px] -tracking-[0.04rem] leading-[83.92px] max-md:text-[48px] max-md:leading-[56px] mt-4"
+        class="font-bebas text-[76.62px] -tracking-[0.04rem] leading-[83.92px] max-md:text-[48px] max-md:leading-[56px] max-md:mt-4"
       >
         SPRZEDAJEMY SAMOCHODY
         <br />
@@ -31,7 +31,7 @@
       src="@/assets/images/landing.png"
       alt="landing"
       loading="lazy"
-      class="absolute bottom-[110px] right-[80px] w-[1064px] h-[404px] max-md:w-screen max-md:h-auto max-md:right-0 max-md:bottom-[40px] object-cover max-md:mt-8"
+      class="absolute z-[-1] bottom-[110px] right-0 max-w-[1064px] h-[404px] max-md:w-screen max-md:h-auto max-md:bottom-[40px] object-cover max-md:mt-8 fade-in"
     />
   </div>
 </template>
