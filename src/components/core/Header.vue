@@ -18,7 +18,9 @@
       <slot></slot>
     </div>
 
-    <AppButton text="Zadzwoń do nas" variant="raised"></AppButton>
+    <div class="relative z-20">
+      <AppButton text="Zadzwoń do nas" variant="raised"></AppButton>
+    </div>
   </header>
 </template>
 

@@ -3,8 +3,9 @@
     class="flex flex-col relative min-h-screen mx-auto bg-background-white items-center"
   >
     <div class="w-full max-w-[1440px]">
-      <div class="sticky top-0 right-0 left-0">
+      <div class="sticky top-0 right-0 left-0 z-10">
         <AppHeader>
+          <AppLines />
           <AppNavigation></AppNavigation>
         </AppHeader>
       </div>
@@ -22,6 +23,7 @@ import { defineComponent } from "vue";
 import AppFooter from "../core/Footer.vue";
 import AppHeader from "../core/Header.vue";
 import AppNavigation from "../core/Navigation.vue";
+import AppLines from "../core/Lines.vue";
 
 export default defineComponent({
   name: "AppDesktopLayout",
@@ -29,6 +31,7 @@ export default defineComponent({
     AppHeader,
     AppFooter,
     AppNavigation,
+    AppLines,
   },
 });
 </script>

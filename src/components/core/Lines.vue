@@ -3,12 +3,12 @@
     <img
       :src="require(`@/assets/svg/${icon_left}`)"
       :alt="icon_left"
-      class="relative z-0"
+      class="absolute top-0 right-[210px] z-20"
     />
     <img
       :src="require(`@/assets/svg/${icon_right}`)"
       :alt="icon_right"
-      class="relative z-0"
+      class="absolute top-[-10px] right-0 z-20"
     />
   </div>
 </template>
@@ -32,6 +32,6 @@ export default defineComponent({
 
 <style scoped>
 .svg-block {
-  @apply flex z-0 absolute top-0 right-0;
+  @apply flex absolute top-0 right-[60px] w-[471px] h-[668px];
 }
 </style>
